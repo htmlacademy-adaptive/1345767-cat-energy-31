@@ -1,18 +1,37 @@
 <!DOCTYPE html>
 <html class="page" lang="ru">
-  <head>
-    <meta charset="UTF-8">
-    <title>Название проекта</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
-  </head>
-  <body class="page__body">
-    <header class="main-header">
-      <a href="index.html" class="main-header__logo">
-        <img class="main-header__logo-image" width="60" height="50" src="#" alt="">
-      </a>
-      <span class="main-header__logo-name"></span>
-    </header>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <title>Название проекта</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" href="styles/styles.css">
+  <script src="scripts/index.js" defer></script>
+</head>
+<body class="page__body">
+<header class="main-header">
+  <div class="main-header__logo-wrapper">
+    <a href="index.html" class="main-header__logo">
+      <img class="main-header__logo-image" width="60" height="50" src="#" alt="cat energy">
+    </a>
+    <span class="main-header__logo-name"></span>
+    <span class="main-header__logo-second-name"></span>
+  </div>
+  <nav class="main-navigation">
+    <button class="main-navigation__toggle" type="button">
+      <span class="visually-hidden">Открыть меню</span>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item-active">
+          <a href="">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="catalog.html">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </button>
+  </nav>
+</header>
+</body>
 </html>
