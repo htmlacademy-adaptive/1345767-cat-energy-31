@@ -2,15 +2,15 @@
 <html class="page" lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Название проекта</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Cat energy - главная страница</title>
   <link rel="stylesheet" href="styles/styles.css">
   <script src="scripts/index.js" defer></script>
 </head>
 <body class="page__body">
 <header class="main-header">
   <div class="main-header__logo-wrapper logo">
-    <a href="index.html" class="main-header__logo logo">
+    <a class="main-header__logo logo" href="index.html">
       <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
     </a>
     <span class="logo__name"></span>
@@ -22,7 +22,7 @@
     </button>
     <ul class="main-navigation__list site-list">
       <li class="site-list__item site-list__item-active">
-        <a href="">Главная</a>
+        <a href="#">Главная</a>
       </li>
       <li class="site-list__item">
         <a href="catalog.html">Каталог продукции</a>
@@ -39,8 +39,8 @@
     <div class="hero__wrapper">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__text">Занялся собой? Займись котом!</p>
-      <button class="hero__button button">Подобрать программу</button>
-      <img class="hero__image" src="#" alt="Банка корма Cat Energy">
+      <button class="hero__button button" type="button">Подобрать программу</button>
+      <img class="hero__image" src="#" width="100" height="100" alt="Банка корма Cat Energy">
     </div>
   </section>
   <section class="catalog-cards">
@@ -52,18 +52,18 @@
             <h2 class="cards__title">Похудение</h2>
             <p class="cards__text">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на
               диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-            <a href="#" class="cards__link">Каталог slim</a>
+            <a class="cards__link" href="#">Каталог slim</a>
           </div>
-          <img class="cards__image" src="#" alt="Изображение стройного кота">
+          <img class="cards__image" src="#" width="100" height="100" alt="Изображение стройного кота">
         </li>
         <li class="cards__item">
           <div class="cards__description">
             <h2 class="cards__title">Набор массы</h2>
             <p class="cards__text">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет
               вашему коту нарастить необходимые мышцы!</p>
-            <a href="#" class="cards__link">Каталог pro</a>
+            <a class="cards__link" href="#">Каталог pro</a>
           </div>
-          <img class="cards__image" src="#" alt="Изображение накаченного кота">
+          <img class="cards__image" src="#" width="100" height="100" alt="Изображение накаченного кота">
         </li>
       </ul>
     </div>
@@ -104,7 +104,7 @@
       <h2 class="example__title">Живой пример</h2>
       <p class="example__text">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
         Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов
-        в день. </p>
+        в день.</p>
       <div class="example__numbers statistic">
         <div class="statistic__weight">
           <h3 class="statistic__title">5 КГ</h3>
@@ -120,9 +120,9 @@
         <p class="price__numbers">15 000 РУБ.</p>
       </div>
     </div>
-    <div class="example__slider">
-      <img class="example__slider__image" src="#" alt="Толстый кот">
-      <img class="example__slider__image" src="#" alt="Худой кот">
+    <div class="example__slider slider">
+      <img class="slider__image" src="#" width="50" height="50" alt="Толстый кот">
+      <img class="slider__image" src="#" width="50" height="50" alt="Худой кот">
     </div>
     .slider
   </section>
@@ -130,11 +130,11 @@
     <h2 class="visually-hidden">Карта для сотрудничества</h2>
     <div class="contact__wrapper">
       <div class="contact__cooperation">
-        <p class="contact-map__title">приглашаем к сотрудничеству дилеров!</p>
-        <p class="contact-map-address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="contact__title">приглашаем к сотрудничеству дилеров!</p>
+        <p class="contact__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
       <iframe class="contact-map" src="#"></iframe>
-      <a href="index.html" class="logo">
+      <a class="logo" href="index.html">
         <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
       </a>
     </div>
@@ -148,13 +148,13 @@
   <div class="socials">
     <ul class="socials__list">
       <li class="socials__item vk-logo">
-        <a href="#"></a>
+        <a href="#">Вконтакте</a>
       </li>
       <li class="socials__item youtube-logo">
-        <a href="#"></a>
+        <a href="#">Ютуб</a>
       </li>
       <li class="socials__item tg-logo">
-        <a href="#"></a>
+        <a href="#">Телеграм</a>
       </li>
     </ul>
   </div>
