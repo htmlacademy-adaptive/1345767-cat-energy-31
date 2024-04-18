@@ -8,31 +8,32 @@
 </head>
 <body>
 <header class="main-header">
-  <div class="main-header__logo-wrapper logo">
-    <a class="logo" href="index.html">
-      <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
-    </a>
-    <p class="logo-info"><b>Cat</b> Energy</p>
-  </div>
   <nav class="main-navigation">
-    <button class="main-navigation__toggle" type="button">
-      <span class="visually-hidden">Открыть меню</span>
-    </button>
-    <ul class="main-navigation__list site-list">
-      <li class="site-list__item">
-        <a href="index.html">Главная</a>
-      </li>
-      <li class="site-list__item site-list__item-active">
-        <a href="#">Каталог продукции</a>
-      </li>
-      <li class="site-list__item">
-        <a href="#">Подбор программы</a>
-      </li>
-    </ul>
+    <div class="main-navigation__logo-wrapper">
+      <a class="logo" href="index.html">
+        <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
+      </a>
+      <button class="main-navigation__toggle" type="button">
+        <span class="visually-hidden">Открыть меню</span>
+      </button>
+      <ul class="main-navigation__list site-list">
+        <li class="site-list__item site-list__item-active">
+          <a href="index.html">Главная</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Каталог продукции</a>
+        </li>
+        <li class="site-list__item">
+          <a href="#">Подбор программы</a>
+        </li>
+      </ul>
+    </div>
   </nav>
 </header>
+
 <main class="main-container">
   <h1 class="visually-hidden">Cat Energy - Каталог продукции</h1>
+
   <section class="catalog">
     <h2 class="catalog-title">Каталог продукции</h2>
     <div class="catalog__wrapper">
@@ -239,13 +240,14 @@
       </ul>
     </div>
   </section>
+
   <section class="additional-goods">
-    <h3 class="additional-goods__title">Дополнительные товары</h3>
+    <h2 class="additional-goods__title">Дополнительные товары</h2>
     <div class="additional-goods__wrapper">
       <ul class="additional-goods__list">
         <li class="additional-goods__item">
           <div class="additional-goods__info">
-            <p class="additional-goods__name">Сахарозаменитель</p>
+            <h4 class="additional-goods__name">Сахарозаменитель</h4>
             <p class="additional-goods__unit">1 упаковка (100 г)</p>
             <p class="additional-goods__price">200 ₽</p>
           </div>
@@ -253,7 +255,7 @@
         </li>
         <li class="additional-goods__item">
           <div class="additional-goods__info">
-            <p class="additional-goods__name">Питьевая вода</p>
+            <h4 class="additional-goods__name">Питьевая вода</h4>
             <p class="additional-goods__unit">5 литров</p>
             <p class="additional-goods__price">50 ₽</p>
           </div>
@@ -261,7 +263,7 @@
         </li>
         <li class="additional-goods__item">
           <div class="additional-goods__info">
-            <p class="additional-goods__name">Молоко</p>
+            <h4 class="additional-goods__name">Молоко</h4>
             <p class="additional-goods__unit">1 литр</p>
             <p class="additional-goods__price">100 ₽</p>
           </div>
@@ -269,7 +271,7 @@
         </li>
         <li class="additional-goods__item">
           <div class="additional-goods__info">
-            <p class="additional-goods__name">Витамины</p>
+            <h4 class="additional-goods__name">Витамины</h4>
             <p class="additional-goods__unit">1 упаковка (30 г)</p>
             <p class="additional-goods__price">300 ₽</p>
           </div>
@@ -277,25 +279,22 @@
         </li>
       </ul>
     </div>
-    <div class="order-all">
-      <svg class="order-all__icon" width="82" height="82">
-        <use href="#"></use>
-      </svg>
-      <p class="order-all__text">Закажите все и получите чехол для кота в подарок!</p>
-    </div>
+    <p class="order-all">Закажите все и получите чехол для кота в подарок!</p>
   </section>
+
   <section class="shares">
     <h3 class="shares__title">Акции и новинки</h3>
     <div class="shares__subscribe subscribe">
-      <p class="shares__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
+      <p class="subscribe__text">Подпишитесь на наши новости и не пропустите ни одного предложения!</p>
       <form class="subscribe__form" action="https://echo.htmlacademy.ru/courses" method="get">
         <label class="subscribe__label">
           <input type="email" name="email">
         </label>
-        <button class="button" type="button">Подписаться</button>
+        <button class="subscribe-button button" type="button">Подписаться</button>
       </form>
     </div>
   </section>
+
   <section class="contact">
     <h2 class="visually-hidden">Карта для сотрудничества</h2>
     <div class="contact__wrapper">
@@ -314,27 +313,39 @@
       </a>
     </div>
   </section>
+
 </main>
+
 <footer class="main-footer">
-  <div class="main-footer__logo-wrapper ">
-    <p class="logo-info"><b>Cat</b> Energy</p>
+  <div class="main-footer__logo-wrapper logo">
+    <a class="logo__info" href="index.html">
+      <p class="logo__text"><b>Cat</b> Energy</p>
+    </a>
   </div>
   <div class="socials">
     <ul class="socials__list">
       <li class="socials__item vk-logo">
-        <a href="#">Вконтакте</a>
+        <a href="#">
+          <span class="visually-hidden">Вконтакте</span>
+        </a>
       </li>
       <li class="socials__item youtube-logo">
-        <a href="#">Ютуб</a>
+        <a href="#">
+          <span class="visually-hidden">Ютьюб</span>
+        </a>
       </li>
       <li class="socials__item tg-logo">
-        <a href="#">Телеграм</a>
+        <a href="#">
+          <span class="visually-hidden">Телеграм</span>
+        </a>
       </li>
     </ul>
   </div>
   <div class="rights">
-    <p class="rights__text">HTML Academy</p>
-    <svg class="rights-icon" width="27" height="34"></svg>
+    <a class="rights__link" href="#">
+      <p class="rights__text">HTML Academy</p>
+      <svg class="rights-icon" width="27" height="34"></svg>
+    </a>
   </div>
 </footer>
 </body>
