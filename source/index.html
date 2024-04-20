@@ -116,8 +116,14 @@
       </div>
     </div>
     <div class="example__slider slider">
-      <img class="slider__image" src="#" width="50" height="50" alt="Толстый кот">
-      <img class="slider__image" src="#" width="50" height="50" alt="Худой кот">
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/state-before-tablet@1x@1x.png 1x, images/state-before-tablet@2x@2x.png 2x" type="image/png" width="560" height="512">
+        <img class="slider__image" src="images/state-before-mobile@1x@1x.png" srcset="images/state-before-mobile@2x@2x.png" width="140" height="128" alt="Толстый кот">
+      </picture>
+      <picture>
+        <source media="(min-width: 768px)" srcset="images/state-after-tablet@1x@1x.png 1x, images/state-after-tablet@2x@2x.png 2x" type="image/png" width="560" height="512">
+        <img class="slider__image" src="images/state-after-mobile@1x@1x.png"  srcset="images/state-after-mobile@2x@2x.png 2x" width="140" height="128" alt="Худой кот">
+      </picture>
       <div class="slider__changer"></div>
     </div>
   </section>
