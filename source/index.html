@@ -12,7 +12,9 @@
   <nav class="main-navigation">
     <div class="main-navigation__logo-wrapper">
       <a class="logo" href="index.html">
-        <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
+        <picture>
+          <img class="logo__image" width="60" height="50" src="#" alt="cat energy">
+        </picture>
       </a>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
@@ -36,11 +38,14 @@
   <h1 class="visually-hidden">Cat Energy - главная</h1>
   <section class="hero">
     <div class="hero__wrapper">
-      <img class="hero__image" src="#" width="200" height="150" alt="Пример функционального питания">
       <h2 class="hero__title">Функциональное питание для котов</h2>
       <p class="hero__text">Занялся собой? Займись котом!</p>
       <button class="hero__button button" type="button">Подобрать программу</button>
-      <img class="hero__image" src="#" width="100" height="100" alt="Банка корма Cat Energy">
+      <picture>
+        <source width="552" height="499" type="image/png" media="(min-width: 1440px)" srcset="images/index-can-desktop@1x.png 1x, images/index-can-desktop@2x.png 2x">
+        <source width="709" height="609" type="image/png" media="(min-width: 768px)" srcset="images/index-can-tablet@1x.png 1x, images/index-can-tablet@2x.png 2x">
+        <img class="hero__image" src="images/index-can-mobile@1x.png" srcset="images/index-can-mobile@2x.png 2x" width="280" height="270" alt="Пример банки корма Cat Energy">
+      </picture>
     </div>
   </section>
 
