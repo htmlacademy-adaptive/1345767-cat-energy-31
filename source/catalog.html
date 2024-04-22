@@ -13,7 +13,12 @@
   <nav class="main-navigation">
     <div class="main-navigation__logo-wrapper">
       <a class="logo" href="index.html">
-        <img class="logo__image" width="60" height="50" src="#" alt="Cat energy">
+        <picture>
+          <source media="(min-width: 1440px)" srcset="images/icons/logo-desktop.svg" type="image/svg+xml" width="70" height="59">
+          <source media="(min-width: 768px)" srcset="images/icons/logo-tablet.svg" type="image/svg+xml" width="60" height="50">
+          <img class="logo__image" width="33" height="38" src="images/icons/logo-mobile.svg" alt="cat energy">
+        </picture>
+        <img class="logo__text" width="101" height="18" src="images/icons/logo-text.svg" alt="cat energy text">
       </a>
       <button class="main-navigation__toggle" type="button">
         <span class="visually-hidden">Открыть меню</span>
