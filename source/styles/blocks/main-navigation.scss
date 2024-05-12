@@ -1,0 +1,24 @@
+.main-navigation {
+  color: #000000;
+  margin: 0 auto;
+}
+
+.main-navigation__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-flow: column wrap;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .main-navigation {
+    margin: 0;
+  }
+
+  .main-navigation__list {
+    display: flex;
+    flex-direction: row;
+    gap: 33px;
+  }
+}

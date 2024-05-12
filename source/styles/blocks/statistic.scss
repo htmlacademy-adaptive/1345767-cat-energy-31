@@ -1,0 +1,48 @@
+.statistic {
+  color: #000000;
+  display: flex;
+  gap: 32px;
+  justify-content: space-between;
+}
+
+.statistic__weight {
+  width: 170px;
+}
+
+.statistic__time {
+  width: 170px;
+}
+
+.statistic__title {
+  font-family: $Oswald;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.statistic__text {
+  font-family: $Lato;
+  font-size: 12px;
+  line-height: 100%;
+  font-weight: 400;
+  color: $special-dark-grey;
+  text-align: center;
+}
+
+@media (min-width: $tablet-width) {
+  .statistic {
+    width: 370px;
+    gap: 42px;
+  }
+
+  .statistic__title {
+    font-size: 30px;
+    line-height: 37px;
+  }
+
+  .statistic__text {
+    font-size: 14px;
+    line-height: 14px;
+  }
+}
